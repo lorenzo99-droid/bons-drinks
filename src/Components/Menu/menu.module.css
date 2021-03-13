@@ -1,0 +1,33 @@
+.formContainer{
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+}
+
+.forms{
+  display: grid;
+  grid-area: forms;
+  grid-template-columns:  20% auto 20% 10%;
+  /* grid-column-start: 1;
+  grid-column-end: span 3; */
+}
+
+img{
+  display: grid;
+  grid-area: img;
+  grid-column-start: 2;
+}
+  /* .botao{
+    width: 156px;
+    height: 38px;
+    margin-top: 15px;
+    color: bisque;
+    background-color: rgba(185, 39, 39, 0.644);
+    border-radius: 6px;
+  }
+  
+  .botao:hover{
+    color: black;
+    width: 166px;
+    height: 48px;
+    transition: 1.5s;
+  }  */
