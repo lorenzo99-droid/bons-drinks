@@ -3,7 +3,7 @@ import style from "./menu.module.css"
 export default class Menu extends Component {
     render() {
         return (
-            <div>
+            <body>
                 <h2>CONTATO</h2>
                 <div className={style.formContainer}>
                     <img className={style.imagem} src="https://bonsdrinks.netlify.app/static/media/contact-pic.689e126c.jpg"></img>
@@ -24,7 +24,7 @@ export default class Menu extends Component {
                         </div>
                     </form>
                 </div>
-            </div>
+            </body>
         )
     }
 }

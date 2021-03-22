@@ -1,21 +1,12 @@
 .formContainer{
   display: grid;
-  grid-template-columns:repeat(5, 1fr);
+  grid-template-columns:repeat(2, 1fr);
+}
+form.forms{
+  display: flex;
+  flex-direction: column;
 }
 
-.forms{
-  display: grid;
-  grid-area: forms;
-  grid-template-columns:  20% auto 20% 10%;
-  /* grid-column-start: 1;
-  grid-column-end: span 3; */
-}
-
-img{
-  display: grid;
-  grid-area: img;
-  grid-column-start: 2;
-}
   /* .botao{
     width: 156px;
     height: 38px;
