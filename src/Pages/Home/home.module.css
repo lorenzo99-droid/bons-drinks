@@ -1,0 +1,23 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.h1{
+    position: absolute;
+    width: 100%;
+    color: aliceblue;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Pacifico', cursive;
+}
+.img{
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}

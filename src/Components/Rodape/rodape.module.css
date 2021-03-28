@@ -1,0 +1,12 @@
+.rodape{
+    background-color: #000000cb;
+    width: 100%;
+    height: 100%;
+}
+
+.p{
+    color: blanchedalmond;
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}

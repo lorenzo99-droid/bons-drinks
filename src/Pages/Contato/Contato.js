@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import style from "./menu.module.css";
-export default class Menu extends Component {
-  render() {
+import React from 'react';
+import style from './contato.module.css'
+
+export default function Contato() {
     return (
-      <div>
+        <div className={style.container}>
         <h2>CONTATO</h2>
         <div className={style.formContainer}>
           <img
@@ -22,6 +22,5 @@ export default class Menu extends Component {
           </form>
         </div>
       </div>
-    );
-  }
+    )
 }
