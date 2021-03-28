@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import style from './contato.module.css'
+import Button from '../../Components/button/Button'
+
 
 export default function Contato() {
     return (
@@ -18,7 +20,7 @@ export default function Contato() {
 
             <textarea placeholder="Mensagem" name="mensagem" />
             
-            <button className={style.botao}>Enviar</button>
+            <Button largura="50%">Enviar</Button>
           </form>
         </div>
       </div>

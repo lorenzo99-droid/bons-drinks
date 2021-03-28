@@ -13,9 +13,9 @@ export default function App() {
         <Header className={style.navContainer}>
           <nav className={style.navHeader}>
             <ul>
-              <li className={style.nav}>
+              <a className={style.nav} onclick={console.log("click funcionando")}>
                 <Link to="/"> Bons Drinks</Link>
-              </li>
+              </a>
               <li>
                 <a className={style.nav}>
                   <h2>Drinks</h2>
@@ -38,12 +38,6 @@ export default function App() {
             </ul>
           </nav>
         </Header>
-
-        {/* <li><Link to="/">Drinks</Link></li> */}
-
-        {/* <li> <Link to="/">Nosso time</Link></li> */}
-
-        {/* <li><Link to="/">Sobre Nós</Link></li> */}
 
         <Switch>
           <Route exact path="/" >

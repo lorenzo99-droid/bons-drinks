@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import style from "./header.module.css"
-export default class Header extends Component {
-    render() {
+export default function Header(){
         return (
             
                 <header className={style.navContainer}>
@@ -15,5 +14,4 @@ export default class Header extends Component {
                     </nav>
                 </header>
         )
-    }
 }
