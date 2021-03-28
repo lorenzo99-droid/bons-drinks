@@ -5,6 +5,10 @@ import Rodape from "./Components/Rodape/Rodape";
 import Home from "./Pages/Home/Home";
 import Contato from "./Pages/Contato/Contato";
 
+import Sobre from "./Pages/Sobre/Sobre";
+import Drinks from "./Pages/Drinks/Drinks";
+import Time from "./Pages/Time/Time";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function App() {
   return (
@@ -13,27 +17,23 @@ export default function App() {
         <Header className={style.navContainer}>
           <nav className={style.navHeader}>
             <ul>
-              <a className={style.nav} onclick={console.log("click funcionando")}>
+              <li className={style.nav}>
                 <Link to="/"> Bons Drinks</Link>
-              </a>
-              <li>
-                <a className={style.nav}>
+              </li>
+              <li className={style.nav}>
                   <h2>Drinks</h2>
-                </a>
+                
               </li>
 
               <li className={style.nav}>
                 <Link to="/contato">Contato</Link>
               </li>
-              <li>
-                <a className={style.nav}>
-                  <h2>Nosso Time</h2>
-                </a>
+
+              <li className={style.nav}>
+                  <Link to="/time">Nosso Time</Link>
               </li>
-              <li>
-                <a className={style.nav}>
-                  <h2>Sobre Nós</h2>
-                </a>
+              <li className={style.nav}>
+                  <Link to="/sobre">Sobre Nós</Link>
               </li>
             </ul>
           </nav>
@@ -46,6 +46,15 @@ export default function App() {
 
           <Route path="/contato">
             <Contato />
+          </Route>
+          <Route path="/sobre">
+            <Sobre />
+          </Route>
+          <Route path="/drinks">
+            <Drinks />
+          </Route>
+          <Route path="/time">
+            <Time />
           </Route>
         </Switch>
         <Rodape></Rodape>
