@@ -1,7 +1,5 @@
 .drinksApp {
   text-align: center;
   display: grid;
-  /* grid-template-areas: "nav" "nav" "nav" */
-
   grid-template-rows: 74px auto 20px;
 }
