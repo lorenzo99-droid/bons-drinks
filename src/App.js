@@ -14,30 +14,7 @@ export default function App() {
   return (
     <Router>
       <div className="drinksApp">
-        <Header className={style.navContainer}>
-          <nav className={style.navHeader}>
-            <ul>
-              <li className={style.nav}>
-                <Link to="/"> Bons Drinks</Link>
-              </li>
-              <li className={style.nav}>
-                  <h2>Drinks</h2>
-                
-              </li>
-
-              <li className={style.nav}>
-                <Link to="/contato">Contato</Link>
-              </li>
-
-              <li className={style.nav}>
-                  <Link to="/time">Nosso Time</Link>
-              </li>
-              <li className={style.nav}>
-                  <Link to="/sobre">Sobre Nós</Link>
-              </li>
-            </ul>
-          </nav>
-        </Header>
+        <Header />
 
         <Switch>
           <Route exact path="/" >
@@ -47,17 +24,21 @@ export default function App() {
           <Route path="/contato">
             <Contato />
           </Route>
+
           <Route path="/sobre">
             <Sobre />
           </Route>
+
           <Route path="/drinks">
             <Drinks />
           </Route>
+
           <Route path="/time">
             <Time />
           </Route>
+
         </Switch>
-        <Rodape></Rodape>
+        <Rodape/>
       </div>
     </Router>
   );
